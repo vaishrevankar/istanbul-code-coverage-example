@@ -22,6 +22,8 @@ pipeline {
         stage('Code Coverage'){
             steps {
             sh 'npm run test-cover'
+            cd ./coverage/lcov-report
+            index.html
             }
         }
     }
